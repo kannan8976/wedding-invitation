@@ -1,0 +1,125 @@
+.details-container {
+  min-height: 100vh;
+  padding: 30px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:
+    linear-gradient(rgba(45, 10, 20, 0.65), rgba(45, 10, 20, 0.75)),
+    url("/images/couple.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.details-card {
+  width: 100%;
+  max-width: 480px;
+  padding: 35px 22px;
+  text-align: center;
+  background: rgba(255, 246, 228, 0.94);
+  border: 3px solid #d5ad63;
+  border-radius: 20px;
+  box-shadow: 0 10px 35px #0008;
+  color: #571c2b;
+  animation: detailsAppear 1s ease;
+}
+
+.details-blessing {
+  color: #9b6b24;
+  font-size: 17px;
+}
+
+.details-card h1 {
+  font-size: 30px;
+  margin: 12px 0;
+}
+
+.details-line {
+  width: 100px;
+  height: 2px;
+  background: #c49a4e;
+  margin: 15px auto 22px;
+}
+
+.details-intro {
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+.details-card > h2 {
+  font-size: 25px;
+  margin: 10px 0;
+}
+
+.details-heart {
+  font-size: 22px;
+}
+
+.details-section,
+.details-date,
+.details-venue {
+  margin-top: 25px;
+  padding: 17px 10px;
+  border-top: 1px solid #d9bd86;
+}
+
+.details-card h3 {
+  color: #9a6725;
+  font-size: 19px;
+  margin: 5px 0 12px;
+}
+
+.details-section p,
+.details-date p,
+.details-venue p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 5px 0;
+}
+
+.details-divider {
+  color: #c49a4e;
+  margin: 12px;
+  font-size: 22px;
+}
+
+.details-venue h2 {
+  font-size: 21px;
+}
+
+.details-button {
+  margin-top: 25px;
+  padding: 13px 35px;
+  border: none;
+  border-radius: 30px;
+  background: #8b263d;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.details-button:hover {
+  background: #64182c;
+}
+
+@keyframes detailsAppear {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 480px) {
+  .details-card {
+    padding: 28px 16px;
+  }
+
+  .details-card h1 {
+    font-size: 26px;
+  }
+}

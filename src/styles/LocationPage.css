@@ -1,0 +1,124 @@
+.location-container {
+  min-height: 100vh;
+  padding: 25px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:
+    linear-gradient(rgba(40, 8, 20, 0.58), rgba(40, 8, 20, 0.7)),
+    url("/images/couple.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.location-card {
+  width: 100%;
+  max-width: 480px;
+  padding: 35px 22px;
+  text-align: center;
+  background: rgba(255, 245, 225, 0.94);
+  border: 3px solid #d4ad65;
+  border-radius: 20px;
+  box-shadow: 0 10px 35px #0008;
+  color: #591c2d;
+  animation: locationAppear 1s ease;
+}
+
+.location-flower {
+  color: #b78b43;
+  font-size: 25px;
+  margin: 12px 0;
+}
+
+.location-welcome {
+  font-size: 16px;
+  color: #9a6725;
+}
+
+.location-card h1 {
+  font-size: 32px;
+  margin: 15px 0;
+}
+
+.location-divider {
+  width: 100px;
+  height: 2px;
+  background: #c69c51;
+  margin: 20px auto;
+}
+
+.location-card h2 {
+  font-size: 23px;
+  margin: 18px 0;
+}
+
+.location-icon {
+  font-size: 42px;
+  margin-top: 25px;
+}
+
+.location-card h3 {
+  color: #9a6725;
+  font-size: 20px;
+}
+
+.hall-name {
+  line-height: 1.5;
+}
+
+.hall-address {
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.location-date {
+  margin-top: 25px;
+  padding: 15px 5px;
+  border-top: 1px solid #d4b77f;
+  border-bottom: 1px solid #d4b77f;
+  font-weight: bold;
+}
+
+.map-button {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 14px 22px;
+  background: #8b263d;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.map-button:hover {
+  background: #64182c;
+  transform: translateY(-2px);
+}
+
+.location-footer {
+  margin-top: 25px;
+  font-size: 16px;
+  color: #91662d;
+}
+
+@keyframes locationAppear {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 480px) {
+  .location-card {
+    padding: 28px 16px;
+  }
+
+  .location-card h1 {
+    font-size: 27px;
+  }
+}

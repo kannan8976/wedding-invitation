@@ -1,0 +1,99 @@
+.flower-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+
+  background:
+    linear-gradient(
+      rgba(35, 10, 20, 0.48),
+      rgba(35, 10, 20, 0.58)
+    ),
+    url("/images/couple.jpeg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.flower-card {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 430px;
+  min-height: 600px;
+  padding: 40px 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background: rgba(255, 244, 223, 0.78);
+  backdrop-filter: blur(3px);
+
+  border: 3px solid #c69b51;
+  border-radius: 18px;
+  box-shadow: 0 10px 35px #0008;
+}
+
+.flower-card h1 {
+  color: #92364b;
+  font-size: 27px;
+}
+
+.flower-card p {
+  color: #70452f;
+  line-height: 1.8;
+}
+
+.flower-card h2 {
+  color: #92364b;
+}
+
+.flower-decoration {
+  color: #c69b51;
+  font-size: 35px;
+  margin: 30px 0;
+}
+
+.click-count {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.flower-button {
+  background: #8c303d;
+  color: white;
+  border: 2px solid #c69b51;
+  border-radius: 30px;
+  padding: 15px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.flower-button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.falling-flowers span {
+  position: absolute;
+  top: -50px;
+  animation: flowerFall 3s linear forwards;
+  pointer-events: none;
+}
+
+@keyframes flowerFall {
+  from {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateY(700px) rotate(500deg);
+    opacity: 0;
+  }
+}

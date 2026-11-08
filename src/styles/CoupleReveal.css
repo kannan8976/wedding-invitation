@@ -1,0 +1,103 @@
+.reveal-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #3b101d, #9b4658);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 20px;
+  text-align: center;
+}
+
+.reveal-title {
+  color: #ffe6b0;
+  margin-bottom: 35px;
+}
+
+.couple-stage {
+  width: 100%;
+  max-width: 430px;
+  display: flex;
+  overflow: hidden;
+}
+
+.couple-stage img {
+  width: 50%;
+  height: 350px;
+  object-fit: cover;
+  border: 2px solid #d8b66b;
+}
+
+.groom-photo {
+  animation: groomSlide 2.5s ease forwards;
+}
+
+.bride-photo {
+  animation: brideSlide 2.5s ease forwards;
+}
+
+@keyframes groomSlide {
+  from { transform: translateX(-110%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes brideSlide {
+  from { transform: translateX(110%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+.final-couple {
+  width: 100%;
+  max-width: 430px;
+}
+
+.couple-merged {
+  width: 100%;
+  border: 4px solid #d8b66b;
+  border-radius: 15px;
+  box-shadow: 0 10px 35px #0008;
+  animation: coupleAppear 1.5s ease forwards;
+}
+
+@keyframes coupleAppear {
+  from {
+    opacity: 0;
+    transform: scale(0.75);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.couple-name-reveal {
+  color: #ffe6b0;
+  animation: namesAppear 1.5s ease;
+}
+
+.couple-name-reveal h1 {
+  font-size: 30px;
+  margin: 12px;
+}
+
+.couple-name-reveal button {
+  background: #d2a653;
+  color: #481a24;
+  padding: 14px 35px;
+  border: none;
+  border-radius: 30px;
+  font-size: 17px;
+  margin-top: 20px;
+}
+
+@keyframes namesAppear {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
